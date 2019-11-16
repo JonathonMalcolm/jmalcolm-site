@@ -101,7 +101,7 @@ const Section = styled.div`
     css`
       text-align: left;
       & > * {
-        margin-left: 30vw;
+        margin-left: 25vw;
       }
       h4 {
         margin-left: 20vw;
@@ -146,11 +146,11 @@ const Section = styled.div`
 `;
 
 const Item = styled.div`
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   border: none;
   border-bottom: 1px solid #eee;
-  h6 {
+  h6{
     letter-spacing: 2px;
     font-weight: 700;
     padding-top: 6px;
@@ -165,10 +165,6 @@ const Item = styled.div`
     opacity: 0.75;
     float: right;
     text-transform: uppercase;
-  }
-  p {
-    margin-bottom: 24px;
-    opacity: 0.5;
   }
   ${media.xs`
     width: 90%;
@@ -231,11 +227,59 @@ export default props => {
       <a id="experience">Experience</a>
       <Section center dark>
         <h4>Experience</h4>
-        <span>Where I've worked.</span>
+        <span>Where I've worked throughout my working years.</span>
         <Item>
-          <span>MAY 2018 - CURRENT</span>
-          <h6>SOMEWHERE</h6>
-          <p>A Job</p>
+          <span>September 2019 - Present</span>
+          <h6>Graduate Teaching Assistant - Queen's University</h6>
+          <p>
+            <ul>
+              <li>Worked with Professor by assisting students throughout laboratory sessions covering Machine Vision topics.</li>
+              <li>Assisted in evaluating students knowledge throughout laboratories.</li>
+              <li>Developed new an engaging laboratory exercises.</li>
+            </ul>
+          </p>
+        </Item>
+        <Item>
+          <span>September 2018 - April 2019</span>
+          <h6>Undergraduate Teaching Assistant - Queen's University</h6>
+          <p>
+            <ul>
+              <li>Worked with Professors in multiple classes in assisting students throughout laboratory sessions covering fundamentals of data structures and intro to electronics.</li>
+              <li>Assisted in evaluating students knowledge throughout the laboratories.</li>
+              <li>Taught multiple students through tutorials as well as individual tutoring.</li>
+            </ul>
+          </p>
+        </Item>
+        <Item>
+          <span>September 2017 - August 2018</span>
+          <h6>Software Development Intern - RL Solutions</h6>
+          <p>
+            <ul>
+              <li>Collaborated with Product Management and Quality Assurance departments throughout the development cycle to ensure clean, reusable code was produced.</li>
+              <li>Developed new visual dashboard editor to allow clients to customize all areas of the dashboard.</li>
+              <li>Developed new visual dashboard to display client's current software version, increased client upgrades by 53%.</li>
+            </ul>
+          </p>
+        </Item>
+        <Item>
+          <span>May 2017 - August 2017</span>
+          <h6>Undergraduate Research Assistant - Robotics and Computer Vision Lab</h6>
+          <p>
+            <ul>
+            <li>Examined different approaches to stereo vision disparity calculations.</li>
+            <li>Assisted in developing new minimalist descriptor for 3D object recognition and point cloud registration.</li>
+            </ul>
+          </p>
+        </Item>
+        <Item>
+          <span>September 2016 - April 2017</span>
+          <h6>Undergraduate Teaching Assistant - Queen's University</h6>
+          <p>
+            <ul>
+              <li>Worked with Professors in multiple classes in assisting students throughout laboratory sessions covering fundamentals of data structures and semiconductor electronics.</li>
+              <li>Assisted in evaluating students knowledge throughout the laboratories.</li>
+            </ul>
+          </p>
         </Item>
       </Section>
       <a id="tech">Tech</a>
@@ -251,23 +295,27 @@ export default props => {
       <a id="education">Education</a>
       <Section dark center>
         <h4>EDUCATION</h4>
-        <span>Education I've recieved.</span>
+        <Item>
+          <span>2018 - Present</span>
+          <h6>MASc Computer Engineering in Machine Learning and Computer Vision</h6>
+          <p>Queen's University</p>
+        </Item>
         <Item>
           <span>2014 - 2019</span>
-          <h6>BASc Electrical Engineering with Professional Internship (Honours)</h6>
+          <h6>BASc Electrical Engineering with Professional Internship (Honors)</h6>
           <p>Queen's University</p>
         </Item>
       </Section>
-      <a id="honoursAndAwards">Honours & Awards</a>
-      <Section center>
-        <h4>HONORS & AWARDS WIP</h4>
+       <a id="honoursAndAwards">Honors & Awards</a>
+       <Section center>
+         <h4>HONORS & AWARDS</h4>
         <span>A list of honors and awards I have recieved for my work.</span>
         <Item>
-          <span>2016</span>
-          <h6>BEST .....</h6>
-          <p>QHACKS</p>
+          <span>2019</span>
+          <h6>First Class Honors</h6>
+          <p>Recieved this award for achieving a 3.5 GPA or higher.</p>
         </Item>
-      </Section>
+       </Section> 
     </Content>
   );
   return (
